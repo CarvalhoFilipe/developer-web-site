@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #141414;
+  --font: #e1e1e1;
+  --logo: #2483a6;
+  --active: #a68a24;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: var(--background);
+  color: var(--font);
+}
+
+a {
+  text-decoration: none;
+  color: var(--font);
+  cursor: pointer;
+}
