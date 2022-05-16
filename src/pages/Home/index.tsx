@@ -1,5 +1,10 @@
+import { Banner } from "../../components/Banner";
+import "./styles.scss";
+
 export default function Home() {
-    return (<h1>Hello World!</h1>
-    );
-  }
-  
+  return (
+    <main className="container-home">
+      <Banner />
+    </main>
+  );
+}
