@@ -1,41 +1,66 @@
-
-.banner{
+.banner {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  position: relative;
+  img {
     width: 100%;
-    height: 600px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  div {
     display: flex;
-    position: relative;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  
-    div {
-      display: flex;
-      flex-direction: column;
-      max-width: 700px;
-      height: 600px;
-      position: absolute;
-      align-items: center;
-      justify-content: center;
-      h2 {
-        span {
-          color: var(--font);
-          strong {
-            color: var(--logo);
-          }
-        }
-        margin-top: 3.5rem;
-        padding: 1rem;
-        font-size: 2.5rem;
-        box-shadow: 1px 1px 1px 1px var(--background);
-        text-shadow: 1px 1px var(--background);
-        border-radius: 50px;
-        color: var(--active);
-        transition: transform 0.2s;
-        &:hover {
-          transform: translateY('-5px');
+    flex-direction: column;
+    max-width: 700px;
+    padding: 2rem 0;
+    height: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end;
+    h2 {
+      span {
+        color: var(--white-800);
+        strong {
+          color: var(--logo);
         }
       }
+      margin-top: 3.5rem;
+      padding: 1rem;
+      font-size: 2.5rem;
+      box-shadow: 1px 1px 1px 1px var(--black-900);
+      text-shadow: 1px 1px var(--black-900);
+      border-radius: 50px;
+      color: var(--active);
+      transition: transform 0.2s;
+      
     }
   }
+}
+
+.content-button {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+
+  button {
+    border: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: filter 0.2s;
+
+    svg {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}
