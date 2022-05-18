@@ -21,10 +21,16 @@
     padding: 0 4rem;
 
     a {
+      font-weight: bold;
+      font-size: 1.125rem;
       transition: color 0.2s;
       &:hover {
-        color: var(--active);
+        color: var(--logo);
       }
     }
   }
+}
+
+.active {
+  color: var(--active);
 }

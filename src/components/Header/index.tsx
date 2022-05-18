@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Nav } from "./Nav";
 import "./styles.scss";
 export function Header() {
   return (
@@ -7,9 +7,9 @@ export function Header() {
         Developer<strong>.</strong>
       </label>
       <nav>
-        <NavLink to="/" style={{}}>Home</NavLink>
-        <NavLink to="about">About</NavLink>
-        <NavLink to="developer">Developer</NavLink>
+        <Nav to="/" title="Home" />
+        <Nav to="about" title="About" />
+        <Nav to="developer" title="Developer" />
       </nav>
     </main>
   );

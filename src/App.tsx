@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <Router />
-      <Footer /> {/*Teste de commit!*/}
+      <Footer />
     </BrowserRouter>
   );
 }
