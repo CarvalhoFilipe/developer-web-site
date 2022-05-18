@@ -5,8 +5,10 @@
 }
 
 :root {
-  --background: #141414;
-  --font: #e1e1e1;
+  --background: #f7f7ef;
+  --black-900: #141414;
+  --black-800: #1f1f1f;
+  --white-800: #e1e1e1;
   --logo: #2483a6;
   --active: #a68a24;
 }
@@ -22,12 +24,16 @@ html {
 
 body {
   font-family: Roboto, sans-serif;
-  background: var(--background);
-  color: var(--font);
+  background: var(--black-800);
+  color: var(--white-800);
 }
 
 a {
   text-decoration: none;
-  color: var(--font);
+  color: var(--white-800);
+  cursor: pointer;
+}
+
+button {
   cursor: pointer;
 }
