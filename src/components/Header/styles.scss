@@ -1,10 +1,16 @@
 .header {
   display: flex;
   height: 5rem;
-  max-width: 1180px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  background-color: rgba(31, 31, 31, 0.8);
   label {
     font-size: 2.5rem;
     strong {
@@ -15,7 +21,8 @@
   nav {
     display: flex;
     height: 5rem;
-    width: 100%;
+    width: 1080px;
+
     align-items: center;
     justify-content: space-around;
     padding: 0 4rem;
@@ -24,13 +31,22 @@
       font-weight: bold;
       font-size: 1.125rem;
       transition: color 0.2s;
+      text-shadow: 1px 1px var(--black-900);
       &:hover {
         color: var(--logo);
+        text-shadow: 1px 1px 2px var(--black-900), 0 0 1em var(--logo),
+          0 0 0.2em var(--logo);
       }
     }
   }
+
+  transition: all 0.2s;
 }
 
 .active {
   color: var(--active);
+}
+
+.scroll-move {
+  background-color: var(--black-800);
 }
