@@ -6,7 +6,8 @@ export function Footer() {
     <>
       <div className="footer">
         <div className="footer_left">
-    <p>Qualquer texto</p>
+          <p><b>Developer.</b></p>
+           Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
         </div>
         <div className="footer_right">
           <table>
@@ -20,10 +21,10 @@ export function Footer() {
                 Inicial
               </td>
               <td>
-                
+
               </td>
               <td>
-                
+
               </td>
             </tr>
             <tr>
@@ -31,10 +32,10 @@ export function Footer() {
                 Quem somos ?
               </td>
               <td>
-                
+
               </td>
               <td>
-                
+
               </td>
             </tr>
             <tr>
@@ -42,10 +43,10 @@ export function Footer() {
                 Desenvolvedores
               </td>
               <td>
-                
+
               </td>
               <td>
-                
+
               </td>
             </tr>
           </table>
