@@ -11,13 +11,17 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(31, 31, 31, 0.8);
+
   label {
+    padding-left: 20px; //Padding de 20px para afastar o Developer da borda!
     font-size: 2.5rem;
+
     strong {
       font-size: 2.5rem;
       color: var(--logo);
     }
   }
+
   nav {
     display: flex;
     height: 5rem;
@@ -32,6 +36,7 @@
       font-size: 1.125rem;
       transition: color 0.2s;
       text-shadow: 1px 1px var(--black-900);
+
       &:hover {
         color: var(--logo);
         text-shadow: 1px 1px 2px var(--black-900), 0 0 1em var(--logo),
